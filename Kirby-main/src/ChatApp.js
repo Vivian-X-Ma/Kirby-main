@@ -14,7 +14,7 @@ const ChatApp = () => {
     },
   ];
   const [loading, setLoading] = useState(false);
-  const apiKey = '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';
+  const apiKey = APIKEY;
   const chatgpt = new ChatGPTWrapper(apiKey);
   const [response, setResponse] = useState("");
 
