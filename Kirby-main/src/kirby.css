@@ -1,0 +1,125 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+ 
+}
+
+body {
+    background-image: url('./background.jpg');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: cover; 
+    background-color: 	#f7daea;
+    min-height: 100%;
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+h1 {
+    color: rgb(183, 60, 81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search {
+    min-width: 35%;
+    margin: 4rem 0 2 rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 1.5rem 1.75rem;
+    border-radius: 5rem;
+    background: #f7daea;  
+    box-shadow: 3px 3px rgba(223,109,169, 0.7);
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    font-size: 1.5 rem;
+    font-weight:500;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    
+    outline: none;
+    color: #d74894;
+    background:#efb6d4;
+    margin: 2px;
+}
+
+.search input::placeholder {
+    color:rgba(215,72,148, 0.68);
+
+}
+
+
+.search img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 2px;
+    opacity: 0.8;
+
+}
+
+.search img.spin-animation {
+    animation: spin 2s linear infinite;
+}
+
+.search button {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 2px;
+    background-color: transparent;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search img:hover {
+   opacity: 1;
+
+}
+
+.main .output {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(239,182,212, 0.75);
+    padding: 1.5rem 9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+/*
+@keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+        opacity: 50%;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 100%;
+    }
+}
+*/
+
